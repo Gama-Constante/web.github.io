@@ -1,0 +1,34 @@
+/* Agregar al style/style.css para perfil y marketplace */
+
+/* Perfil */
+.perfil-container {max-width: 600px; margin: 30px auto; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.05); text-align: center;}
+.perfil-avatar {width: 150px; height: 150px; margin: auto; border-radius: 50%; background: linear-gradient(135deg,#60a5fa,#6366f1); margin-bottom: 15px;}
+.perfil-container h2 {font-size: 22px; margin-bottom: 10px;}
+.perfil-info {display: flex; justify-content: space-around; margin-top: 15px; color: #6b7280; font-weight: 600;}
+
+/* Marketplace */
+.productos {display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 20px; max-width: 1000px; margin: 30px auto;}
+.producto {background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s;}
+.producto:hover {transform: translateY(-5px);}
+.producto img {width: 100%; height: 150px; object-fit: cover;}
+.producto h3 {padding: 10px 15px 5px 15px; font-size: 18px;}
+.producto .precio {padding: 0 15px 10px 15px; font-weight: bold; color: #16a34a; font-size: 16px;}
+
+.post-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1877f2; /* azul por defecto */
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.avatar-green {
+  background-color: #34d399; /* verde */
+}
+
+.avatar-blue {
+  background-color: #1877f2; /* azul */
+}

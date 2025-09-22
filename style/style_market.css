@@ -1,0 +1,49 @@
+/* style/style.css */
+
+/* Reset y tipografía */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #111;}
+
+a {text-decoration: none; color: inherit;}
+
+/* Header */
+header {background: #1877f2; color: white; padding: 15px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.1);}
+header .header-container {max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;}
+header h1 {font-size: 24px; font-weight: 700;}
+header nav a {margin-left: 15px; font-weight: 600; color: #fff; padding: 6px 12px; border-radius: 6px; transition: background 0.3s;}
+header nav a:hover {background: rgba(255,255,255,0.2);}
+
+/* Main Feed */
+main {max-width: 900px; margin: 30px auto; padding: 0 20px;}
+.feed {display: flex; flex-direction: column; gap: 20px;}
+.post {display: flex; background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s;}
+.post:hover {transform: translateY(-3px);}
+.post-avatar {width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg,#60a5fa,#6366f1); flex-shrink: 0;}
+.avatar-green {background: linear-gradient(135deg,#34d399,#10b981);}
+.post-content {margin-left: 15px; flex: 1;}
+.post-content h2 {font-size: 18px; font-weight: 700; margin-bottom: 5px;}
+.post-content p {margin-bottom: 10px; line-height: 1.5;}
+.post-actions {display: flex; gap: 15px; font-size: 14px; color: #6b7280;}
+.post-actions span {cursor: pointer; transition: color 0.2s;}
+.post-actions span:hover {color: #1877f2;}
+
+/* Footer */
+footer {text-align: center; padding: 20px 0; color: #6b7280; font-size: 14px; border-top: 1px solid #e5e7eb;}
+
+/* Responsive */
+@media (max-width: 700px) {header .header-container {flex-direction: column; gap: 10px;} .post {flex-direction: column; align-items: center; text-align: center;} .post-content {margin-left: 0; margin-top: 10px;}}
+
+.post-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1877f2; /* azul por defecto */
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.avatar-green {
+  background-color: #34d399; /* verde */
+}
